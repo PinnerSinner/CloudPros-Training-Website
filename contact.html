@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact CloudPros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Orbitron:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="page--contact">
+    <div class="neon-bg" aria-hidden="true"></div>
+    <header class="site-header">
+        <nav class="nav">
+            <a href="index.html" class="nav__logo">CloudPros</a>
+            <button class="nav__toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav__links">
+                <a href="index.html" class="nav__link">Home</a>
+                <a href="courses.html" class="nav__link">Courses</a>
+                <a href="faq.html" class="nav__link">FAQ</a>
+                <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+            </div>
+            <a href="courses.html#enroll" class="cta-button">Join a cohort</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section section--compact">
+            <div class="grid grid--contact">
+                <div class="contact-intro">
+                    <div class="badge">Let's collaborate</div>
+                    <h1>Talk to a CloudPros strategist</h1>
+                    <p>Share your goals and we’ll craft an electrified roadmap. We respond within one business day.</p>
+                    <div class="contact-highlights">
+                        <div>
+                            <h2>Global presence</h2>
+                            <p>Hybrid-delivered from hubs in Seattle, Dublin, Singapore, and Sydney.</p>
+                        </div>
+                        <div>
+                            <h2>Instant insights</h2>
+                            <p>Receive a customized capability report with next steps for your team.</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-grid">
+                        <label>
+                            Full name
+                            <input type="text" name="name" placeholder="Alex Taylor" required>
+                        </label>
+                        <label>
+                            Email
+                            <input type="email" name="email" placeholder="you@company.com" required>
+                        </label>
+                        <label>
+                            Company
+                            <input type="text" name="company" placeholder="Your organization" required>
+                        </label>
+                        <label>
+                            Team size
+                            <select name="team-size">
+                                <option value="1-10">1-10</option>
+                                <option value="11-50">11-50</option>
+                                <option value="51-200">51-200</option>
+                                <option value="200+">200+</option>
+                            </select>
+                        </label>
+                        <label class="form-grid__full">
+                            What are you exploring?
+                            <select name="interest">
+                                <option value="aws">AWS transformation</option>
+                                <option value="azure">Azure modernization</option>
+                                <option value="gcp">GCP data innovation</option>
+                                <option value="security">Security & compliance</option>
+                                <option value="leadership">Executive enablement</option>
+                                <option value="custom">Custom blend</option>
+                            </select>
+                        </label>
+                        <label class="form-grid__full">
+                            Vision
+                            <textarea name="vision" rows="4" placeholder="Share outcomes, certifications, or challenges."></textarea>
+                        </label>
+                    </div>
+                    <button type="submit" class="cta-button cta-button--glow">Send message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section section--compact">
+            <div class="grid grid--info">
+                <div class="info-panel info-panel--thin">
+                    <h2>How it works</h2>
+                    <ol>
+                        <li>Schedule a strategy call</li>
+                        <li>Align on goals, skills, and success metrics</li>
+                        <li>Launch your neon-powered cohort</li>
+                    </ol>
+                </div>
+                <div class="info-panel info-panel--thin">
+                    <h2>Stay in the loop</h2>
+                    <p>Subscribe to our monthly signal to receive launch alerts, labs, and playbooks.</p>
+                    <form class="inline-form">
+                        <input type="email" placeholder="email@domain.com" required>
+                        <button type="submit" class="ghost-button ghost-button--mini">Subscribe</button>
+                    </form>
+                </div>
+                <div class="info-panel info-panel--thin">
+                    <h2>Join the community</h2>
+                    <p>Access masterminds, demos, and co-working sessions with CloudPros alumni worldwide.</p>
+                    <a class="cta-button" href="#">Request invite</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div>
+                <span class="nav__logo">CloudPros</span>
+                <p>Live cloud mastery experiences for teams and individuals.</p>
+            </div>
+            <div class="site-footer__links">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="site-footer__social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="YouTube">YouTube</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+        <p class="site-footer__copy">© <span id="year"></span> CloudPros. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/contact.js" defer></script>
+</body>
+</html>

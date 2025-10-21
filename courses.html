@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudPros Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Orbitron:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="page--courses">
+    <div class="neon-bg" aria-hidden="true"></div>
+    <header class="site-header">
+        <nav class="nav">
+            <a href="index.html" class="nav__logo">CloudPros</a>
+            <button class="nav__toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav__links">
+                <a href="index.html" class="nav__link">Home</a>
+                <a href="courses.html" class="nav__link nav__link--active">Courses</a>
+                <a href="faq.html" class="nav__link">FAQ</a>
+                <a href="contact.html" class="nav__link">Contact</a>
+            </div>
+            <a href="#enroll" class="cta-button">Schedule a cohort</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section section--compact">
+            <div class="section__header">
+                <h1>Choose your CloudPros path</h1>
+                <p>Filter by cloud provider, track, or role to see the learning experiences built for you.</p>
+            </div>
+            <div class="filter-panel">
+                <div class="filter-panel__group">
+                    <label for="searchCourses">Search</label>
+                    <input type="search" id="searchCourses" placeholder="Search by skill, certification, or tool">
+                </div>
+                <div class="filter-panel__group">
+                    <label for="providerFilter">Cloud focus</label>
+                    <select id="providerFilter">
+                        <option value="all">All providers</option>
+                        <option value="aws">AWS</option>
+                        <option value="azure">Azure</option>
+                        <option value="gcp">GCP</option>
+                        <option value="multi">Multi-cloud</option>
+                    </select>
+                </div>
+                <div class="filter-panel__group">
+                    <label for="trackFilter">Career track</label>
+                    <select id="trackFilter">
+                        <option value="all">All tracks</option>
+                        <option value="architect">Architect</option>
+                        <option value="devops">DevOps</option>
+                        <option value="data">Data & AI</option>
+                        <option value="security">Security</option>
+                        <option value="leadership">Leadership</option>
+                    </select>
+                </div>
+                <div class="filter-panel__group">
+                    <label for="levelFilter">Level</label>
+                    <select id="levelFilter">
+                        <option value="all">All levels</option>
+                        <option value="foundation">Foundation</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--compact" id="courseList">
+            <div class="grid grid--courses" data-course-grid>
+                <article class="course-card" data-provider="aws" data-track="architect" data-level="advanced">
+                    <div class="course-card__header">
+                        <h2>AWS Solutions Architect Sprint</h2>
+                        <span class="course-card__badge">Advanced • 6 weeks</span>
+                    </div>
+                    <p>Design resilient AWS architectures with live labs on VPC design, serverless orchestration, and cost-aware scaling.</p>
+                    <ul>
+                        <li>Instructor-led architecture reviews and diagram critiques</li>
+                        <li>Hands-on labs in multi-account governance and IaC automation</li>
+                        <li>Certification prep for AWS Solutions Architect Professional</li>
+                    </ul>
+                    <div class="course-card__actions">
+                        <button class="ghost-button ghost-button--mini" data-preview>Preview</button>
+                        <button class="cta-button" data-enroll="AWS Solutions Architect Sprint">Enroll</button>
+                    </div>
+                </article>
+                <article class="course-card" data-provider="aws" data-track="devops" data-level="intermediate">
+                    <div class="course-card__header">
+                        <h2>Serverless Ops for AWS</h2>
+                        <span class="course-card__badge">Intermediate • 4 weeks</span>
+                    </div>
+                    <p>Implement event-driven architectures with Lambda, EventBridge, and managed observability pipelines.</p>
+                    <ul>
+                        <li>Deploy multi-stage serverless apps with IaC and CI/CD pipelines</li>
+                        <li>Debug distributed tracing with AWS X-Ray and CloudWatch</li>
+                        <li>FinOps guardrails for high-volume event processing</li>
+                    </ul>
+                    <div class="course-card__actions">
+                        <button class="ghost-button ghost-button--mini" data-preview>Preview</button>
+                        <button class="cta-button" data-enroll="Serverless Ops for AWS">Enroll</button>
+                    </div>
+                </article>
+                <article class="course-card" data-provider="azure" data-track="devops" data-level="intermediate">
+                    <div class="course-card__header">
+                        <h2>Azure DevOps Accelerator</h2>
+                        <span class="course-card__badge">Intermediate • 4 weeks</span>
+                    </div>
+                    <p>Orchestrate CI/CD, IaC, and release governance for modern Azure fleets with GitHub Actions and Azure DevOps.</p>
+                    <ul>
+                        <li>Live migration labs from pipelines classic to YAML</li>
+                        <li>Governance automation with Azure Policy and Bicep</li>
+                        <li>Hybrid delivery patterns for on-prem to cloud transitions</li>
+                    </ul>
+                    <div class="course-card__actions">
+                        <button class="ghost-button ghost-button--mini" data-preview>Preview</button>
+                        <button class="cta-button" data-enroll="Azure DevOps Accelerator">Enroll</button>
+                    </div>
+                </article>
+                <article class="course-card" data-provider="azure" data-track="data" data-level="advanced">
+                    <div class="course-card__header">
+                        <h2>Azure AI Engineer Studio</h2>
+                        <span class="course-card__badge">Advanced • 5 weeks</span>
+                    </div>
+                    <p>Build production-grade AI services with Azure OpenAI, Cognitive Search, and Responsible AI guardrails.</p>
+                    <ul>
+                        <li>Prompt engineering patterns and vector search integration</li>
+                        <li>Real-time monitoring and bias mitigation workflows</li>
+                        <li>Capstone: deploy AI copilots to enterprise users</li>
+                    </ul>
+                    <div class="course-card__actions">
+                        <button class="ghost-button ghost-button--mini" data-preview>Preview</button>
+                        <button class="cta-button" data-enroll="Azure AI Engineer Studio">Enroll</button>
+                    </div>
+                </article>
+                <article class="course-card" data-provider="gcp" data-track="data" data-level="advanced">
+                    <div class="course-card__header">
+                        <h2>GCP Data Engineering Studio</h2>
+                        <span class="course-card__badge">Advanced • 5 weeks</span>
+                    </div>
+                    <p>Master end-to-end data pipelines with Dataflow, BigQuery, Pub/Sub, and Vertex AI pipelines.</p>
+                    <ul>
+                        <li>Streaming and batch ingestion patterns built live</li>
+                        <li>Data quality monitoring with Data Catalog and Looker</li>
+                        <li>Capstone: real-time analytics lakehouse delivery</li>
+                    </ul>
+                    <div class="course-card__actions">
+                        <button class="ghost-button ghost-button--mini" data-preview>Preview</button>
+                        <button class="cta-button" data-enroll="GCP Data Engineering Studio">Enroll</button>
+                    </div>
+                </article>
+                <article class="course-card" data-provider="gcp" data-track="security" data-level="intermediate">
+                    <div class="course-card__header">
+                        <h2>GCP Security Incident Lab</h2>
+                        <span class="course-card__badge">Intermediate • 3 weeks</span>
+                    </div>
+                    <p>Hone your incident response skills with Chronicle, Security Command Center, and Workload Identity.</p>
+                    <ul>
+                        <li>Run live breach simulations and purple-team exercises</li>
+                        <li>Automate policy enforcement with Forseti and Config Validator</li>
+                        <li>Deploy zero trust patterns with BeyondCorp Enterprise</li>
+                    </ul>
+                    <div class="course-card__actions">
+                        <button class="ghost-button ghost-button--mini" data-preview>Preview</button>
+                        <button class="cta-button" data-enroll="GCP Security Incident Lab">Enroll</button>
+                    </div>
+                </article>
+                <article class="course-card" data-provider="multi" data-track="security" data-level="advanced">
+                    <div class="course-card__header">
+                        <h2>Cloud Security Zero-to-Hero</h2>
+                        <span class="course-card__badge">Advanced • 6 weeks</span>
+                    </div>
+                    <p>Navigate compliance frameworks, threat modeling, and cross-cloud incident readiness.</p>
+                    <ul>
+                        <li>Multi-cloud security labs across AWS, Azure, and GCP</li>
+                        <li>Hands-on with SIEM automation and compliance-as-code</li>
+                        <li>Capstone: build a cloud SOC response plan</li>
+                    </ul>
+                    <div class="course-card__actions">
+                        <button class="ghost-button ghost-button--mini" data-preview>Preview</button>
+                        <button class="cta-button" data-enroll="Cloud Security Zero-to-Hero">Enroll</button>
+                    </div>
+                </article>
+                <article class="course-card" data-provider="multi" data-track="leadership" data-level="intermediate">
+                    <div class="course-card__header">
+                        <h2>Multi-Cloud FinOps Leadership</h2>
+                        <span class="course-card__badge">Intermediate • 3 weeks</span>
+                    </div>
+                    <p>Lead cost-conscious cultures across cloud estates with dashboards, policies, and executive storytelling.</p>
+                    <ul>
+                        <li>FinOps maturity assessment and roadmap design</li>
+                        <li>Showback, chargeback, and budget guardrail labs</li>
+                        <li>Executive-ready storytelling with Power BI & Looker</li>
+                    </ul>
+                    <div class="course-card__actions">
+                        <button class="ghost-button ghost-button--mini" data-preview>Preview</button>
+                        <button class="cta-button" data-enroll="Multi-Cloud FinOps Leadership">Enroll</button>
+                    </div>
+                </article>
+                <article class="course-card" data-provider="multi" data-track="architect" data-level="foundation">
+                    <div class="course-card__header">
+                        <h2>Cloud Foundations Flight School</h2>
+                        <span class="course-card__badge">Foundation • 2 weeks</span>
+                    </div>
+                    <p>Kickstart your cloud literacy journey with fundamentals that map to AWS, Azure, and GCP.</p>
+                    <ul>
+                        <li>Shared responsibility, global infrastructure, and security basics</li>
+                        <li>Hands-on labs to deploy your first workloads</li>
+                        <li>Certification planning for Cloud Practitioner and AZ-900</li>
+                    </ul>
+                    <div class="course-card__actions">
+                        <button class="ghost-button ghost-button--mini" data-preview>Preview</button>
+                        <button class="cta-button" data-enroll="Cloud Foundations Flight School">Enroll</button>
+                    </div>
+                </article>
+            </div>
+            <p class="empty-state" data-empty hidden>No courses match your filters. Try adjusting your selections to uncover more cloud journeys.</p>
+        </section>
+
+        <section class="section section--compact" id="enroll">
+            <div class="enroll-panel">
+                <h2>Schedule a private cohort or join the next public launch</h2>
+                <p>Select a course above to enroll, or connect with a strategist to customize a journey for your entire crew.</p>
+                <button class="cta-button cta-button--glow" data-enroll="General Inquiry">Talk to us</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div>
+                <span class="nav__logo">CloudPros</span>
+                <p>Live cloud mastery experiences for teams and individuals.</p>
+            </div>
+            <div class="site-footer__links">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="site-footer__social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="YouTube">YouTube</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+        <p class="site-footer__copy">© <span id="year"></span> CloudPros. All rights reserved.</p>
+    </footer>
+
+    <div class="modal" id="enrollModal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close modal" data-close-modal>&times;</button>
+            <h2 id="modal-title">Reserve your seat</h2>
+            <p class="modal__subtitle">Choose your preferred start window and we’ll confirm in under a day.</p>
+            <form class="modal__form">
+                <label>
+                    Course
+                    <input type="text" name="course" id="modalCourse" readonly>
+                </label>
+                <label>
+                    Preferred date
+                    <select name="date" id="modalDate"></select>
+                </label>
+                <label>
+                    Time zone
+                    <select name="timezone">
+                        <option value="UTC-8">PST (UTC-8)</option>
+                        <option value="UTC-5">EST (UTC-5)</option>
+                        <option value="UTC+0">GMT (UTC+0)</option>
+                        <option value="UTC+5:30">IST (UTC+5:30)</option>
+                        <option value="UTC+10">AEST (UTC+10)</option>
+                    </select>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="you@company.com" required>
+                </label>
+                <label>
+                    Notes
+                    <textarea name="notes" rows="3" placeholder="Share goals, team size, or certification targets"></textarea>
+                </label>
+                <button type="submit" class="cta-button">Submit request</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="preview-drawer" data-preview-drawer>
+        <button class="preview-drawer__close" data-close-preview>&times;</button>
+        <div class="preview-drawer__content">
+            <h2 data-preview-title></h2>
+            <p data-preview-description></p>
+            <ul data-preview-highlights></ul>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/courses.js" defer></script>
+</body>
+</html>
