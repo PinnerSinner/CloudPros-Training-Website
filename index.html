@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudPros | Live Cloud Training</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Orbitron:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="page--home">
+    <div class="neon-bg" aria-hidden="true"></div>
+    <header class="site-header">
+        <nav class="nav">
+            <a href="index.html" class="nav__logo">CloudPros</a>
+            <button class="nav__toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav__links">
+                <a href="index.html" class="nav__link nav__link--active">Home</a>
+                <a href="courses.html" class="nav__link">Courses</a>
+                <a href="faq.html" class="nav__link">FAQ</a>
+                <a href="contact.html" class="nav__link">Contact</a>
+            </div>
+            <a href="courses.html#enroll" class="cta-button">Enroll Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero__content">
+                <div class="badge">Live, Instructor-Led</div>
+                <h1 class="hero__title">Elevate your cloud mastery with <span>CloudPros</span></h1>
+                <p class="hero__subtitle">Immersive, hands-on training experiences engineered for modern teams and ambitious individuals. Learn from seasoned architects, build production-ready skills, and accelerate your certification journey.</p>
+                <div class="hero__actions">
+                    <a href="courses.html" class="cta-button cta-button--glow">Explore Courses</a>
+                    <a href="#upcoming" class="ghost-button">View upcoming cohorts</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <canvas id="orbitCanvas" aria-hidden="true"></canvas>
+                <div class="hero__card">
+                    <h2>Trusted by</h2>
+                    <div class="logo-marquee">
+                        <span>Azure Accelerators</span>
+                        <span>CloudNative Co.</span>
+                        <span>FinOps United</span>
+                        <span>DataSky Labs</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section upcoming" id="upcoming">
+            <div class="section__header">
+                <h2>Upcoming live cohorts</h2>
+                <p>Select your ideal start date and reserve your seat instantly.</p>
+            </div>
+            <div class="carousel" role="region" aria-label="Upcoming live cohorts">
+                <button class="carousel__control carousel__control--prev" aria-label="Previous dates"></button>
+                <div class="carousel__track" data-carousel-track>
+                    <article class="cohort-card" data-date="2024-07-08">
+                        <h3>AWS Solutions Architect Sprint</h3>
+                        <p class="cohort-card__date">Starts July 8, 2024</p>
+                        <p class="cohort-card__summary">Evening sessions • 6 weeks • Live labs & whiteboarding</p>
+                        <button class="ghost-button ghost-button--mini" data-enroll="AWS Solutions Architect Sprint">Reserve Seat</button>
+                    </article>
+                    <article class="cohort-card" data-date="2024-07-22">
+                        <h3>Azure DevOps Accelerator</h3>
+                        <p class="cohort-card__date">Starts July 22, 2024</p>
+                        <p class="cohort-card__summary">Weekend immersive • 4 weeks • Real-world pipelines</p>
+                        <button class="ghost-button ghost-button--mini" data-enroll="Azure DevOps Accelerator">Reserve Seat</button>
+                    </article>
+                    <article class="cohort-card" data-date="2024-08-05">
+                        <h3>GCP Data Engineering Studio</h3>
+                        <p class="cohort-card__date">Starts August 5, 2024</p>
+                        <p class="cohort-card__summary">Live labs • 5 weeks • BigQuery & Dataflow mastery</p>
+                        <button class="ghost-button ghost-button--mini" data-enroll="GCP Data Engineering Studio">Reserve Seat</button>
+                    </article>
+                    <article class="cohort-card" data-date="2024-08-19">
+                        <h3>Cloud Security Zero-to-Hero</h3>
+                        <p class="cohort-card__date">Starts August 19, 2024</p>
+                        <p class="cohort-card__summary">Hybrid cohort • 6 weeks • Compliance & threat labs</p>
+                        <button class="ghost-button ghost-button--mini" data-enroll="Cloud Security Zero-to-Hero">Reserve Seat</button>
+                    </article>
+                    <article class="cohort-card" data-date="2024-09-02">
+                        <h3>Multi-Cloud FinOps Leadership</h3>
+                        <p class="cohort-card__date">Starts September 2, 2024</p>
+                        <p class="cohort-card__summary">Executive mornings • 3 weeks • Cost culture playbooks</p>
+                        <button class="ghost-button ghost-button--mini" data-enroll="Multi-Cloud FinOps Leadership">Reserve Seat</button>
+                    </article>
+                </div>
+                <button class="carousel__control carousel__control--next" aria-label="Next dates"></button>
+            </div>
+        </section>
+
+        <section class="section highlights" id="experience">
+            <div class="section__header">
+                <h2>Why teams choose CloudPros</h2>
+                <p>We combine curated curriculum with luminous delivery for an unforgettable learning journey.</p>
+            </div>
+            <div class="grid grid--highlights">
+                <article class="glow-card">
+                    <h3>Battle-tested instructors</h3>
+                    <p>Our faculty are certified cloud architects, SRE leads, and data strategists who bring real production war stories into every live session.</p>
+                    <button class="info-toggle" data-info="instructors">Preview depth</button>
+                    <div class="info-panel" id="info-instructors">
+                        <p>Meet mentors from Fortune 100 cloud programs and hyper-growth startups, ready to co-design roadmaps tailored to your stack.</p>
+                    </div>
+                </article>
+                <article class="glow-card">
+                    <h3>Immersive labs</h3>
+                    <p>Launch sandboxes powered by Terraform, Kubernetes, and serverless blueprints while guided live by industry experts.</p>
+                    <button class="info-toggle" data-info="labs">Preview depth</button>
+                    <div class="info-panel" id="info-labs">
+                        <p>Break-fix challenges, architectural game days, and pair debugging keep teams sharp and certification-ready.</p>
+                    </div>
+                </article>
+                <article class="glow-card">
+                    <h3>Team intelligence</h3>
+                    <p>Real-time cohort analytics, velocity dashboards, and skill gap heatmaps keep leaders informed and invested.</p>
+                    <button class="info-toggle" data-info="analytics">Preview depth</button>
+                    <div class="info-panel" id="info-analytics">
+                        <p>Post-cohort insights include next-step learning paths and ROI projections to accelerate stakeholder buy-in.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section testimonials" id="testimonials">
+            <div class="section__header">
+                <h2>Outcomes that shine</h2>
+                <p>CloudPros cohorts transform cloud-curious engineers into impact-driven operators.</p>
+            </div>
+            <div class="grid grid--testimonials">
+                <blockquote class="testimonial">
+                    <p>“CloudPros ignited our platform squad. Certifications, architecture upgrades, and a new culture of experimentation.”</p>
+                    <cite>— Priya Mehta, Director of Cloud Transformation</cite>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <p>“The neon-themed labs were unforgettable. Our engineers still quote the instructors’ playbooks months later.”</p>
+                    <cite>— Logan Carter, Lead DevOps Engineer</cite>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <p>“Our executive team finally sees the ROI of upskilling. The dashboards spoke their language instantly.”</p>
+                    <cite>— Kim Santos, CTO, FinOps United</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="section cta">
+            <div class="cta__inner">
+                <h2>Design a custom training flight path</h2>
+                <p>Let’s architect a cloud learning journey that propels your teams forward.</p>
+                <a class="cta-button cta-button--glow" href="contact.html">Talk to a strategist</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div>
+                <span class="nav__logo">CloudPros</span>
+                <p>Live cloud mastery experiences for teams and individuals.</p>
+            </div>
+            <div class="site-footer__links">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="site-footer__social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="YouTube">YouTube</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+        <p class="site-footer__copy">© <span id="year"></span> CloudPros. All rights reserved.</p>
+    </footer>
+
+    <div class="modal" id="enrollModal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close modal" data-close-modal>&times;</button>
+            <h2 id="modal-title">Reserve your seat</h2>
+            <p class="modal__subtitle">Lock in your upcoming CloudPros cohort. A strategist will confirm your enrollment within 24 hours.</p>
+            <form class="modal__form">
+                <label>
+                    Course
+                    <input type="text" name="course" id="modalCourse" readonly>
+                </label>
+                <label>
+                    Preferred date
+                    <select name="date" id="modalDate"></select>
+                </label>
+                <label>
+                    Team size
+                    <input type="number" name="team" min="1" value="1">
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="you@company.com" required>
+                </label>
+                <button type="submit" class="cta-button">Confirm reservation</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/home.js" defer></script>
+</body>
+</html>
