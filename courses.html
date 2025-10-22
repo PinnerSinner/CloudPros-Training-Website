@@ -18,21 +18,13 @@
                 <span></span>
                 <span></span>
             </button>
-            <div class="nav__cluster">
-                <div class="nav__links">
-                    <a href="index.html" class="nav__link">Home</a>
-                    <a href="courses.html" class="nav__link nav__link--active">Courses</a>
-                    <a href="faq.html" class="nav__link">FAQ</a>
-                    <a href="contact.html" class="nav__link">Contact</a>
-                </div>
-                <div class="nav__controls">
-                    <button class="mode-toggle" type="button" aria-label="Toggle color mode" data-mode-toggle aria-pressed="false" data-mode="dark">
-                        <span class="mode-toggle__icon mode-toggle__icon--moon" aria-hidden="true">🌙</span>
-                        <span class="mode-toggle__icon mode-toggle__icon--sun" aria-hidden="true">☀️</span>
-                    </button>
-                    <a href="#enroll" class="cta-button">Schedule a cohort</a>
-                </div>
+            <div class="nav__links">
+                <a href="index.html" class="nav__link">Home</a>
+                <a href="courses.html" class="nav__link nav__link--active">Courses</a>
+                <a href="faq.html" class="nav__link">FAQ</a>
+                <a href="contact.html" class="nav__link">Contact</a>
             </div>
+            <a href="#enroll" class="cta-button">Schedule a cohort</a>
         </nav>
     </header>
 
@@ -251,10 +243,10 @@
                 <a href="faq.html">FAQ</a>
                 <a href="contact.html">Contact</a>
             </div>
-            <div class="site-footer__meta">
-                <p><strong>Email</strong><br><a href="mailto:hello@cloudpros.io">hello@cloudpros.io</a></p>
-                <p><strong>Call</strong><br><a href="tel:+12065551234">+1 (206) 555-1234</a></p>
-                <p><strong>Office Hours</strong><br>Mon–Fri · 8am–6pm PT</p>
+            <div class="site-footer__social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="YouTube">YouTube</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
             </div>
         </div>
         <p class="site-footer__copy">© <span id="year"></span> CloudPros. All rights reserved.</p>
@@ -275,13 +267,6 @@
                     Preferred date
                     <select name="date" id="modalDate"></select>
                 </label>
-                <div class="modal__calendar" aria-live="polite">
-                    <span>Save this cohort</span>
-                    <div class="modal__calendar-links">
-                        <a href="#" class="calendar-link calendar-link--google is-disabled" data-calendar-google aria-disabled="true" target="_blank" rel="noopener">Google</a>
-                        <a href="#" class="calendar-link calendar-link--ics is-disabled" data-calendar-ics aria-disabled="true">Download .ics</a>
-                    </div>
-                </div>
                 <label>
                     Time zone
                     <select name="timezone">
@@ -310,30 +295,7 @@
         <div class="preview-drawer__content">
             <h2 data-preview-title></h2>
             <p data-preview-description></p>
-            <div class="preview-drawer__meta">
-                <div>
-                    <span>Duration</span>
-                    <strong data-preview-duration></strong>
-                </div>
-                <div>
-                    <span>Format</span>
-                    <strong data-preview-format></strong>
-                </div>
-                <div>
-                    <span>Investment</span>
-                    <strong data-preview-price></strong>
-                </div>
-            </div>
-            <p class="preview-drawer__note" data-preview-cadence hidden></p>
-            <h3>Program modules</h3>
-            <ol data-preview-modules></ol>
-            <h3>Key outcomes</h3>
             <ul data-preview-highlights></ul>
-            <div class="preview-drawer__schedule">
-                <h3>Upcoming start dates</h3>
-                <ul data-preview-dates></ul>
-            </div>
-            <button class="cta-button" data-preview-enroll>Reserve this cohort</button>
         </div>
     </div>
 
